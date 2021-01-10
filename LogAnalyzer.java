@@ -36,7 +36,7 @@ public class LogAnalyzer {
 		br = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
 		
 		
-		//file안의 데이터를 한 줄 단위로 읽어들이기
+		//file안의 데이터를 한 줄 단위로 읽어들이기!!
 		logLineList = new ArrayList<String>();
 		String temp = "";
 		
@@ -135,7 +135,7 @@ public class LogAnalyzer {
 				maxValue = value;
 			}
 		}
-		
+		System.out.println("여기가 바뀌었따!!");
 		System.out.println("가장 많이 사용한 key : " + maxKey + ", 사용 횟수 : " + countOfUsedKey.get(maxKey));
 		
 	}//mostUsed
